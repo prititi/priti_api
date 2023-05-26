@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    #category{
+        display: flex;
+    }
+    .container{
+        border: 1px solid green;
+        width:100%
+    }
+    #fetchdiv{
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 3px;
+    }
+    .img{
+        width: 90%;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+</style>
+<body>
+    <section id="category">
+    <div class="sidebar"> 
+        <h3>Sort by Price</h3>
+        <div id="sort">
+            <input type="radio" name="sort" value="asc">
+            <label for="" >Low to High</label>
+            <input type="radio" name="sort" value="desc">
+            <label for="" >High to Low</label>
+        </div>
+        <h3>Filter by category</h3>
+            <select  id="category">
+            <option value="">Category</option>
+            <option value="Starter">Starter</option>
+            <option value="Meal">Meal</option>
+            <option value="veg">Dessert</option>
+
+            </select>
+            <br>
+            <h3>Filter by ORIGIN</h3>
+            <select  id="origin">
+                <option value="">ORIGIN</option>
+                <option value="Indian">Indian</option>
+                <option value="Chineese">Chineese</option>
+                <option value="Italian">Italian</option>
+            </select>
+            <br>
+
+            <div>
+                <h3>Filter By Price Ran</h3>
+                <input type="number">
+                <input type="number" placeholder="to">
+                <br>
+                <button>Filter</button>
+            </div>
+     
+    </div>
+
+
+    <div class="container">
+        <h3>Card Display</h3>
+        <div id="paginationBtn">
+            
+        </div>
+        <div id="fetchdiv">
+            
+        </div>
+       
+    </div>
+    </section>
+</body>
+</html>
+<script src="./srcipt/index.js"></script>
