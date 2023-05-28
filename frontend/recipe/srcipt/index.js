@@ -6,6 +6,8 @@ var param={
 }
 let totalBtn=0;
 const url= new URL("https://priti-api.vercel.app/posts")
+
+//for search 
 function searchParams(){
     url.search= new URLSearchParams(param).toString();
     renderRecipe(url)
